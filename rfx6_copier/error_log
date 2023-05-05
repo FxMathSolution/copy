@@ -1,0 +1,21 @@
+[25-Feb-2014 00:28:29 America/Chicago] PHP Parse error:  syntax error, unexpected T_ELSE in /home/rfx6/public_html/rfx6_copier/api.php on line 53
+[25-Feb-2014 00:30:37 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rfx6/public_html/rfx6_copier/api.php on line 61
+[25-Feb-2014 00:31:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rfx6/public_html/rfx6_copier/api.php on line 61
+[25-Feb-2014 00:31:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/rfx6/public_html/rfx6_copier/api.php on line 61
+[25-Feb-2014 13:21:43 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 82
+[25-Feb-2014 13:22:46 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 82
+[25-Feb-2014 13:23:19 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 82
+[25-Feb-2014 13:24:28 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 82
+[25-Feb-2014 13:24:53 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 82
+[25-Feb-2014 13:35:47 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 87
+[25-Feb-2014 13:36:55 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 87
+[25-Feb-2014 13:37:33 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 87
+[25-Feb-2014 13:38:10 America/Chicago] PHP Fatal error:  Class 'ArrayToXML' not found in /home/rfx6/public_html/rfx6_copier/api.php on line 87
+[25-Feb-2014 13:42:21 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 13:46:41 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 13:51:51 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 13:52:05 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 13:52:22 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 13:56:32 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 14:03:29 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
+[25-Feb-2014 14:06:24 America/Chicago] PHP Warning:  mysql_close(): 3 is not a valid MySQL-Link resource in /home/rfx6/public_html/rfx6_copier/include.php on line 104
