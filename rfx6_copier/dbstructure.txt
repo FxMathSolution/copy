@@ -1,0 +1,114 @@
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `full_name` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+
+CREATE TABLE IF NOT EXISTS `provider_deals` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_id` int(11) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `account_no` bigint(20) NOT NULL,
+  `broker` varchar(100) NOT NULL,
+  `ticket` bigint(20) NOT NULL,
+  `type` tinyint(4) DEFAULT NULL,
+  `symbol` varchar(20) DEFAULT NULL,
+  `lot` double DEFAULT NULL,
+  `equity` double DEFAULT NULL,
+  `balance` double DEFAULT NULL,
+  `open_time` bigint(20) DEFAULT NULL,
+  `open_price` double DEFAULT NULL,
+  `sl` double DEFAULT NULL,
+  `tp` double DEFAULT NULL,
+  `close_time` bigint(20) DEFAULT NULL,
+  `close_price` double DEFAULT NULL,
+  `order_profit` double DEFAULT NULL,
+  `order_commission` double DEFAULT NULL,
+  `order_swap` double DEFAULT NULL,
+  `catch_time` datetime DEFAULT NULL,
+  `register_time` datetime DEFAULT NULL,
+  `register_ip` varchar(50) DEFAULT NULL,
+  `computer_name` varchar(100) DEFAULT NULL,
+  `prd_id` int(11) DEFAULT NULL,
+  `old_ticket` bigint(20) DEFAULT NULL,
+  `old_lot` double DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pro_id` (`pro_id`),
+  KEY `account_no` (`account_no`),
+  KEY `ticket` (`ticket`),
+  KEY `catch_time` (`catch_time`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=924 ;
+
+
+CREATE TABLE IF NOT EXISTS `provider_clients` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_id` int(11) NOT NULL,
+  `cli_id` int(11) NOT NULL,
+  `account_no` bigint(20) DEFAULT NULL,
+  `from_date` date NOT NULL,
+  `to_date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+
+CREATE TABLE IF NOT EXISTS `clients` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `full_name` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `expire` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+
+CREATE TABLE IF NOT EXISTS `client_deals` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prd_id` int(11) NOT NULL,
+  `cli_id` int(11) NOT NULL,
+  `prd_ticket` bigint(20) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `account_no` bigint(20) NOT NULL,
+  `broker` varchar(100) NOT NULL,
+  `ticket` bigint(20) NOT NULL,
+  `type` tinyint(4) DEFAULT NULL,
+  `symbol` varchar(20) DEFAULT NULL,
+  `lot` double DEFAULT NULL,
+  `equity` double DEFAULT NULL,
+  `balance` double DEFAULT NULL,
+  `open_time` bigint(20) DEFAULT NULL,
+  `open_price` double DEFAULT NULL,
+  `sl` double DEFAULT NULL,
+  `tp` double DEFAULT NULL,
+  `close_time` bigint(20) DEFAULT NULL,
+  `close_price` double DEFAULT NULL,
+  `order_profit` double DEFAULT NULL,
+  `order_commission` double DEFAULT NULL,
+  `order_swap` double DEFAULT NULL,
+  `catch_time` datetime DEFAULT NULL,
+  `register_time` datetime DEFAULT NULL,
+  `register_ip` varchar(50) DEFAULT NULL,
+  `computer_name` varchar(100) DEFAULT NULL,
+  `cld_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `prd_id` (`prd_id`),
+  KEY `cli_id` (`cli_id`),
+  KEY `prd_ticket` (`prd_ticket`),
+  KEY `account_no` (`account_no`),
+  KEY `ticket` (`ticket`),
+  KEY `catch_time` (`catch_time`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=849 ;
+
+
+CREATE TABLE IF NOT EXISTS `providers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `full_name` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
